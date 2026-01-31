@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Hariharan — Payments Platform Leader • Builder • AI/Agents • Full-stack" />
+  <title>Hariharan | Profile</title>
+
+  <style>
+    :root{
+      --bg:#0b1020;
+      --card:#0f1733;
+      --muted:#a7b0d6;
+      --text:#e9ecff;
+      --accent:#6ae4ff;
+      --accent2:#a78bfa;
+      --line:rgba(255,255,255,.10);
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: radial-gradient(1200px 800px at 10% 10%, rgba(106,228,255,.20), transparent 55%),
+                  radial-gradient(900px 600px at 90% 20%, rgba(167,139,250,.22), transparent 50%),
+                  linear-gradient(180deg, var(--bg), #070a14 60%, #050712);
+      color:var(--text);
+      line-height:1.45;
+    }
+    a{color:inherit}
+    .wrap{max-width:1100px;margin:0 auto;padding:28px 18px 60px}
+    .topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:22px}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+    .logo{
+      width:44px;height:44px;border-radius:14px;
+      background: linear-gradient(135deg, rgba(106,228,255,.95), rgba(167,139,250,.95));
+      box-shadow: var(--shadow);
+      position:relative;overflow:hidden;
+    }
+    .logo:before{
+      content:"";
+      position:absolute;inset:-20%;
+      background: radial-gradient(circle at 30% 30%, rgba(255,255,255,.35), transparent 45%);
+      transform: rotate(20deg);
+    }
+    .brand h1{font-size:16px;margin:0}
+    .brand small{display:block;color:var(--muted);font-weight:500}
+    .nav{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end}
+    .pill{
+      text-decoration:none;
+      border:1px solid var(--line);
+      padding:9px 12px;border-radius:999px;
+      color:var(--muted);
+      background: rgba(255,255,255,.03);
+      transition: transform .15s ease, border-color .15s ease, color .15s ease, background .15s ease;
+    }
+    .pill:hover{transform: translateY(-1px);border-color: rgba(106,228,255,.55);color:var(--text);background: rgba(106,228,255,.06)}
+    .hero{
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap:18px;
+      align-items:stretch;
+      margin-top:8px;
+    }
+    @media (max-width: 920px){ .hero{grid-template-columns:1fr} .nav{justify-content:flex-start} }
+    .card{
+      background: rgba(15,23,51,.76);
+      border:1px solid var(--line);
+      border-radius:20px;
+      box-shadow: var(--shadow);
+      padding:18px;
+      backdrop-filter: blur(10px);
+    }
+    .headline{
+      font-size:34px;
+      letter-spacing:-.5px;
+      margin:0 0 10px;
+      line-height:1.12;
+    }
+    .sub{
+      color:var(--muted);
+      margin:0 0 16px;
+      font-size:15px;
+      max-width:70ch;
+    }
+    .badges{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 0}
+    .badge{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:9px 12px;border-radius:999px;
+      background: rgba(255,255,255,.04);
+      border:1px solid var(--line);
+      color:var(--text);
+      font-weight:600;
+      font-size:13px;
+    }
+    .dot{width:8px;height:8px;border-radius:999px;background: var(--accent); box-shadow: 0 0 0 3px rgba(106,228,255,.15)}
+    .dot.p{background: var(--accent2); box-shadow: 0 0 0 3px rgba(167,139,250,.15)}
+    .ctaRow{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+    .btn{
+      display:inline-flex;align-items:center;gap:10px;
+      text-decoration:none;
+      padding:10px 14px;
+      border-radius:14px;
+      background: linear-gradient(135deg, rgba(106,228,255,.16), rgba(167,139,250,.14));
+      border:1px solid rgba(106,228,255,.35);
+      color:var(--text);
+      font-weight:700;
+      transition: transform .15s ease, filter .15s ease;
+    }
+    .btn:hover{transform: translateY(-1px);filter: brightness(1.07)}
+    .btn.secondary{
+      background: rgba(255,255,255,.03);
+      border-color: var(--line);
+      color: var(--muted);
+      font-weight:700;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap:14px;
+      margin-top:14px;
+    }
+    .span-7{grid-column: span 7}
+    .span-5{grid-column: span 5}
+    .span-6{grid-column: span 6}
+    .span-4{grid-column: span 4}
+    .span-12{grid-column: span 12}
+    @media (max-width: 920px){
+      .span-7,.span-5,.span-6,.span-4{grid-column: span 12}
+    }
+    h2{margin:0 0 10px;font-size:16px;letter-spacing:-.2px}
+    .muted{color:var(--muted)}
+    .list{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px}
+    .item{
+      padding:12px;border-radius:16px;border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+    }
+    .item strong{display:block;margin-bottom:6px}
+    .kvs{display:grid;grid-template-columns: 1fr 1fr;gap:10px}
+    @media (max-width: 560px){ .kvs{grid-template-columns:1fr} }
+    .kv{padding:12px;border-radius:16px;border:1px dashed rgba(255,255,255,.14);background: rgba(255,255,255,.02)}
+    .kv b{display:block;font-size:13px;margin-bottom:6px}
+    .kv span{color:var(--muted);font-size:13px}
+    .footer{margin-top:18px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+    .tiny{font-size:12px;color:rgba(233,236,255,.65)}
+    .sep{height:1px;background:var(--line);margin:14px 0}
+    .chips{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{font-size:12px;color:var(--muted);border:1px solid var(--line);padding:7px 10px;border-radius:999px;background:rgba(255,255,255,.02)}
+    .codebox{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+      font-size:12px;
+      background: rgba(0,0,0,.25);
+      border:1px solid rgba(255,255,255,.12);
+      border-radius:16px;
+      padding:12px;
+      overflow:auto;
+      color: rgba(233,236,255,.86);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <a class="brand" href="#top" aria-label="Home">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <h1>Hariharan</h1>
+          <small>Payments Platform Leader • Builder • AI/Agents</small>
+        </div>
+      </a>
+      <div class="nav">
+        <a class="pill" href="#about">About</a>
+        <a class="pill" href="#work">Work</a>
+        <a class="pill" href="#projects">Projects</a>
+        <a class="pill" href="#now">Now</a>
+        <a class="pill" href="#contact">Contact</a>
+      </div>
+    </div>
+
+    <section class="hero" id="top">
+      <div class="card">
+        <h2 class="tiny">Profile</h2>
+        <h1 class="headline">I ship real systems: payments, platforms, and AI agents.</h1>
+        <p class="sub">
+          Senior IT Project Manager (GCB4) on a payments platform engineering team — but I stay hands-on:
+          I build full-stack apps, automation, and agentic tooling that connects docs + repos + logs to outcomes.
+        </p>
+
+        <div class="badges">
+          <span class="badge"><span class="dot"></span> Platform / Payments</span>
+          <span class="badge"><span class="dot p"></span> AI Agents & MCP</span>
+          <span class="badge"><span class="dot"></span> FastAPI • React • Postgres</span>
+          <span class="badge"><span class="dot p"></span> Kafka • K8s • Observability</span>
+        </div>
+
+        <div class="ctaRow">
+          <!-- Replace links below with your real URLs -->
+          <a class="btn" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn secondary" href="#projects">See projects</a>
+          <a class="btn secondary" href="#contact">Contact</a>
+        </div>
+
+        <div class="sep"></div>
+
+        <div class="chips">
+          <span class="chip">Build-from-scratch mindset</span>
+          <span class="chip">Automation + governance</span>
+          <span class="chip">Docs as a product</span>
+          <span class="chip">Quality + traceability</span>
+          <span class="chip">Family-first discipline</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 id="now">Now</h2>
+        <ul class="list">
+          <li class="item">
+            <strong>Building</strong>
+            <div class="muted">AI agents that can read Confluence + multiple repos and answer/fix with traceability.</div>
+          </li>
+          <li class="item">
+            <strong>Improving</strong>
+            <div class="muted">Platform documentation, release discipline, and “self-serve” adoption paths for teams.</div>
+          </li>
+          <li class="item">
+            <strong>Exploring</strong>
+            <div class="muted">Algorithmic trading ideas (paper-trading first), risk management, and robust backtesting.</div>
+          </li>
+          <li class="item">
+            <strong>Life</strong>
+            <div class="muted">Raising my son (Elan), coaching, fitness, and building a long-term path to leadership.</div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="grid" id="about">
+      <div class="card span-7">
+        <h2>About</h2>
+        <p class="muted">
+          I’m a platform-focused payments professional who combines delivery leadership with engineering execution.
+          I like systems that are <b>observable</b>, <b>secure</b>, <b>automated</b>, and easy for other teams to adopt.
+        </p>
+        <div class="kvs">
+          <div class="kv">
+            <b>Strengths</b>
+            <span>End-to-end ownership • stakeholder management • architecture literacy • pragmatic engineering</span>
+          </div>
+          <div class="kv">
+            <b>Style</b>
+            <span>High standards, clear templates, reproducible builds, and incremental delivery</span>
+          </div>
+          <div class="kv">
+            <b>Domains</b>
+            <span>Payments platforms • microservices • operational tooling • customer/ops workflows</span>
+          </div>
+          <div class="kv">
+            <b>Currently learning</b>
+            <span>Agent frameworks • retrieval/rerank • TypeScript • modern platform patterns</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card span-5" id="work">
+        <h2>Work focus</h2>
+        <ul class="list">
+          <li class="item">
+            <strong>Platform engineering enablement</strong>
+            <div class="muted">Make adoption easier: README standards, runbooks, UX for tooling, and guardrails.</div>
+          </li>
+          <li class="item">
+            <strong>AI for operations</strong>
+            <div class="muted">Agents that map issues from logs → repo areas → change proposals → PRs.</div>
+          </li>
+          <li class="item">
+            <strong>Reliability</strong>
+            <div class="muted">Release management, observability, incident learnings, and continuous improvement loops.</div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="card span-12" id="projects">
+        <h2>Projects (high signal)</h2>
+        <div class="grid" style="margin-top:10px">
+          <div class="item span-6">
+            <strong>FocusTube (Chrome Extension)</strong>
+            <div class="muted">YouTube distraction blocker with a premium tier; pragmatic product thinking and payments integration.</div>
+          </div>
+          <div class="item span-6">
+            <strong>TamilBoxd</strong>
+            <div class="muted">Full-stack movie rating app (FastAPI + React + Postgres) with deployment + custom domain learnings.</div>
+          </div>
+          <div class="item span-6">
+            <strong>ELAN (Email → Ticket → Agents)</strong>
+            <div class="muted">Email ingestion to MongoDB + ticketing in Postgres; coordinator + L1/L2 agents; audit logs and traceability.</div>
+          </div>
+          <div class="item span-6">
+            <strong>Confluence + Git Knowledge Bot</strong>
+            <div class="muted">Recursive page fetch, clean/store, semantic retrieval, and grounded answers with minimal hallucination.</div>
+          </div>
+        </div>
+
+        <div class="sep"></div>
+
+        <h2 class="tiny">What I value in engineering</h2>
+        <div class="chips">
+          <span class="chip">Traceability</span>
+          <span class="chip">Clean interfaces</span>
+          <span class="chip">Simple > clever</span>
+          <span class="chip">Automation</span>
+          <span class="chip">Security & governance</span>
+          <span class="chip">Readable docs</span>
+          <span class="chip">Operational empathy</span>
+        </div>
+      </div>
+
+      <div class="card span-12" id="contact">
+        <h2>Contact</h2>
+        <p class="muted">
+          Update these placeholders with your real links:
+        </p>
+
+        <div class="codebox" aria-label="Links to edit">
+          GitHub:    https://github.com/&lt;your-username&gt;
+          LinkedIn:  https://www.linkedin.com/in/&lt;your-handle&gt;  (optional)
+          Email:     mailto:&lt;you@example.com&gt;                  (optional)
+        </div>
+
+        <div class="footer">
+          <span>© <span id="y"></span> Hariharan • Built for GitHub Pages</span>
+          <span class="tiny">Tip: keep it simple, keep it current.</span>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
